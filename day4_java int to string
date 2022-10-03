@@ -1,0 +1,44 @@
+// Question: You are given an integer n, you have to convert it into a string.
+
+Please complete the partially completed code in the editor. If your code successfully converts n into a string  the code will print "Good job". Otherwise it will print "Wrong answer".
+
+n can range between -100 to 100 to  inclusive.
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner obj = new Scanner(System.in);
+
+            int n = obj.nextInt();
+
+            int flag = 0;
+
+            if(n>= -100 && n<=100)
+
+            {
+
+                    String s = String.valueOf(n);
+
+                 flag = 1;
+
+         }
+
+            if(flag==1)
+
+            {
+
+
+                System.out.println("Good job");
+
+         }
+    else
+    {
+        System.out.println("Wrong answer");
+    }
+}
+}
